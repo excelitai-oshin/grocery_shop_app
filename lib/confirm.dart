@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:grocery_shop_app/registration.dart';
-class Forget_password extends StatefulWidget {
+class Confirm extends StatefulWidget {
 
   @override
-  _Forget_passwordState createState() => _Forget_passwordState();
+  _ConfirmState createState() => _ConfirmState();
 }
 
-class _Forget_passwordState extends State<Forget_password> {
+class _ConfirmState extends State<Confirm> {
 
   @override
   Widget build(BuildContext context) {
@@ -40,32 +40,16 @@ class FrostedGlassBox extends StatelessWidget {
           ),
           child:   Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('Forget Password',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black,
-                  ),
-                ),
+              Image.asset("assets/confirm.png"),
+              SizedBox(height: 10,
               ),
-              SizedBox(height: 20,
-              ),
-              Text("You can type new password and confirm it below\n            "
-                  "and we can help you reset password"),
-              SizedBox(height: 20,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: TextField(
-
-                  decoration: InputDecoration(
-                      hintText: "Email or Phone Number",
-                      suffixIcon: Icon(Icons.lock,color: Colors.grey,)
-                  ),
-                ),
+                padding: const EdgeInsets.all(9.0),
+                child: Text("You successfully reset your password. Now you are\n            "
+                    "good to go"),
               ),
 
-              SizedBox(height: 30,),
+              SizedBox(height: 10,),
 
               Padding(
                 padding: const EdgeInsets.only(left: 40,right: 40),
@@ -76,7 +60,7 @@ class FrostedGlassBox extends StatelessWidget {
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (Context) =>Forget_password ()));
+                            MaterialPageRoute(builder: (Context) =>Confirm ()));
                         // Respond to button press
                       },
                       style: ElevatedButton.styleFrom(
@@ -111,9 +95,6 @@ class FrostedGlassBox extends StatelessWidget {
             ],
           ),
         ),
-
-
-
 
       ),
     );
