@@ -40,52 +40,48 @@ class FrostedGlassBox extends StatelessWidget {
           ),
           child:   Column(
             children: [
-              Image.asset("assets/confirm.png"),
-              SizedBox(height: 10,
-              ),
+              Image.asset("assets/confirm.png",height: 180,),
+             
               Padding(
-                padding: const EdgeInsets.all(9.0),
-                child: Text("You successfully reset your password. Now you are\n            "
-                    "good to go"),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Text("You successfully reset your password.Now \n "
+                    "                 you are good to go"),
               ),
 
-              SizedBox(height: 10,),
+              SizedBox(height: 20,),
 
-              Padding(
-                padding: const EdgeInsets.only(left: 40,right: 40),
-                child: InkWell(
-                  child: SizedBox(
-                    height: 30,
-                    width: 150,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (Context) =>Confirm ()));
-                        // Respond to button press
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.green,
-                        shape: new
-                        RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(10.0),
-                        ),
+              InkWell(
+                child: SizedBox(
+                  height: 35,
+                  width: 250,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (Context) =>Confirm ()));
+                      // Respond to button press
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.green,
+                      shape: new
+                      RoundedRectangleBorder(
+                        borderRadius: new BorderRadius.circular(10.0),
                       ),
+                    ),
 
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(child: Center(
-                              child: Text("Save",
-                                style: TextStyle(color: Colors.white,fontSize: 20),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(child: Center(
+                            child: Text("Jump Into Login",
+                              style: TextStyle(color: Colors.white,fontSize: 20),
 
-                              ),
                             ),
-                            )
+                          ),
+                          )
 
-                          ],
-                        ),
+                        ],
                       ),
                     ),
                   ),

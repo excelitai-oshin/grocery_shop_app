@@ -3,6 +3,8 @@ import 'package:grocery_shop_app/Cancel_Order.dart';
 import 'package:grocery_shop_app/No_History.dart';
 import 'package:grocery_shop_app/confirm.dart';
 import 'package:grocery_shop_app/empty_cart.dart';
+import 'package:grocery_shop_app/location1.dart';
+import 'package:grocery_shop_app/otp_screen.dart';
 import 'package:grocery_shop_app/search_results.dart';
 import 'package:grocery_shop_app/splash_screen.dart';
 
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Confirm(),
+      home: Location1_screen(),
     );
   }
 }
