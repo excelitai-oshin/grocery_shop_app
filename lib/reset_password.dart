@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:grocery_shop_app/confirm.dart';
 import 'package:grocery_shop_app/forget_password.dart';
 import 'package:grocery_shop_app/registration.dart';
 class Reset_password extends StatefulWidget {
@@ -74,7 +75,7 @@ class FrostedGlassBox extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (Context) =>Forget_password ()));
+                          MaterialPageRoute(builder: (Context) =>Confirm ()));
                       // Respond to button press
                     },
                     style: ElevatedButton.styleFrom(

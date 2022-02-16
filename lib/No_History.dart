@@ -51,9 +51,9 @@ class No_History extends StatelessWidget {
                   width: 250,
                   child: ElevatedButton(
                     onPressed: () {
-                      //Navigator.push(context,
-                       //MaterialPageRoute(builder: (Context) =>empty_cart ()));
-                      // Respond to button press
+                      Navigator.push(context,
+                       MaterialPageRoute(builder: (Context) =>empty_cart ()));
+
                     },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.green,

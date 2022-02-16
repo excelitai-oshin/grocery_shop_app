@@ -2,6 +2,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_shop_app/location1.dart';
+import 'package:grocery_shop_app/reset_password.dart';
 class otp_screen extends StatefulWidget {
 
   @override
@@ -100,7 +101,7 @@ class FrostedGlassBox extends StatelessWidget {
                       color: Colors.white,
                       onPressed: () {
                           Navigator.pushReplacement(
-                            context, MaterialPageRoute(builder: (_) => Location1_screen(),
+                            context, MaterialPageRoute(builder: (_) => Reset_password(),
                           ),
                           );
 

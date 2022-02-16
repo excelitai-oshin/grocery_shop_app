@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:grocery_shop_app/registration.dart';
+import 'package:grocery_shop_app/search_results.dart';
 class Confirm extends StatefulWidget {
 
   @override
@@ -57,7 +58,7 @@ class FrostedGlassBox extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (Context) =>Confirm ()));
+                          MaterialPageRoute(builder: (Context) =>Search_Result ()));
                       // Respond to button press
                     },
                     style: ElevatedButton.styleFrom(
